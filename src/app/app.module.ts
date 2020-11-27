@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { MaterialModule } from './material.module';
 import { AuthService } from './shared/services/auth.service';
 import { NotificationService } from './shared/services/notification.service';
+import {ItemsComponent } from './items/items.component'
 
 @NgModule({
   imports: [
@@ -17,8 +18,9 @@ import { NotificationService } from './shared/services/notification.service';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
+
   ],
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, ItemsComponent],
   providers: [
     AuthService,
     NotificationService
